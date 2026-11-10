@@ -1,23 +1,26 @@
-*{
-    margin :0;
-    padding :0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     background-image: url(assets/gif/Animated\ Countryside\ Platformer\ Panorama.gif);
     background-repeat: no-repeat;
-   height: 100vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
-    
+
 }
-.char{
+
+.char {
     position: absolute;
     bottom: 50px;
-    
+
 }
-#char2{
+
+#char2 {
     right: 10px;
     transform: scaleX(-1);
 }
