@@ -1,3 +1,11 @@
+alert("Welcome to Fighting Game! 🎮");
+
+alert("Player 1: Use Arrow Keys to Move and Space to Jump.");
+
+alert("Player 2: Use A, D keys to Move and W to Jump.");
+
+alert("Game Started! Best of Luck 😊");
+
 var char1 = document.getElementById("char1");
 var char2 = document.getElementById("char2");
 var left = 0;
@@ -43,16 +51,16 @@ function animateChar(){
    // Character 2 - D (Right)
     if (event.keyCode == 68 && right < 1200) {
         right = right + 10;
-        char2.style.left = right + "px";
-        char2.style.transform = "scaleX(1)";
+        char2.style.right = right + "px";
+        char2.style.transform = "scaleX(-1)";
         char2.src = "assets/images/akuma-snkwin.gif";
     }
 
     // Character 2 - A (Left)
     if (event.keyCode == 65 && right > 30) {
         right = right - 10;
-        char2.style.left = right + "px";
-        char2.style.transform = "scaleX(-1)";
+        char2.style.right = right + "px";
+        char2.style.transform = "scaleX(1)";
         char2.src = "assets/images/akuma-snkwin.gif";
     }
        // Character 2 - W (Jump)
@@ -69,10 +77,3 @@ function animateChar(){
 
 window.onkeydown = animateChar
 
-alert("Welcome to Fighting Game! 🎮");
-
-alert("Player 1: Use Arrow Keys to Move and Space to Jump.");
-
-alert("Player 2: Use A, D keys to Move and W to Jump.");
-
-alert("Game Started! Best of Luck 😊");
